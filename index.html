@@ -16,6 +16,31 @@
     </style>
   </head>
   <body>
+    <form id="sort_form">
+      <fieldset>
+        <h2>Enter array:</h2>
+        <div>
+          <input id="array_input" type="text" name="array" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>Choose sort:</h2>
+        <div>
+          <input
+            id="bubble-sort_input"
+            type="radio"
+            name="sort"
+            value="bubble"
+          />
+          <label for="bubble-sort_input">Bubble sort</label>
+        </div>
+        <div>
+          <input id="quick-sort_input" type="radio" name="sort" value="quick" />
+          <label for="quick-sort_input">Quick sort</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Sort" />
+    </form>
     <div id="diag"></div>
     <script src="/src/quickSort.js"></script>
     <script src="/src/bubbleSort.js"></script>
