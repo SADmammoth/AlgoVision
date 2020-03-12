@@ -133,7 +133,7 @@ function VisualBubbleSort(
   async function onCompare(array, left, right) {
     comparedElement(left);
     comparedElement(right);
-    await new Promise((resolve) => setTimeout(() => resolve(), 500));
+    await new Promise((resolve) => setTimeout(() => resolve(), 700));
     normalElement(left);
     normalElement(right);
     renderArray(array);
@@ -143,7 +143,7 @@ function VisualBubbleSort(
   async function onSwap(array, left, right) {
     swappedElement(left);
     swappedElement(right);
-    await new Promise((resolve) => setTimeout(() => resolve(), 500));
+    await new Promise((resolve) => setTimeout(() => resolve(), 700));
     normalElement(left);
     normalElement(right);
     renderArray(array);

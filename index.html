@@ -3,19 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .element {
-        display: inline-block;
-        --i: 1;
-        width: 20px;
-        height: calc(var(--i) * 20px);
-        background: #000000;
-        margin: 0 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>AlgoVision</title>
   </head>
   <body>
+    <h1>AlgoVision</h1>
+    <p class="subtitle">Sorting algorithms visualisation</p>
     <form id="sort_form">
       <fieldset>
         <h2>Enter array:</h2>
@@ -26,12 +19,7 @@
       <fieldset>
         <h2>Choose sort:</h2>
         <div>
-          <input
-            id="bubble-sort_input"
-            type="radio"
-            name="sort"
-            value="bubble"
-          />
+          <input id="bubble-sort_input" type="radio" name="sort" value="bubble" />
           <label for="bubble-sort_input">Bubble sort</label>
         </div>
         <div>
@@ -41,7 +29,24 @@
       </fieldset>
       <input type="submit" value="Sort" />
     </form>
-    <div id="diag"></div>
+    <div class="diag_parent">
+      <div id="diag">Here goes visualisation</div>
+      <div class="legend">
+        <p>Legend:</p>
+        <div>
+          <div class="color" style="background: red;"></div>
+          <span class="legend_note">Comparing elements</span>
+        </div>
+        <div>
+          <div class="color" style="background: green;"></div>
+          <span class="legend_note">Swapping elements</span>
+        </div>
+        <div>
+          <div class="color" style="background: blue;"></div>
+          <span class="legend_note">Pivot element (Quick sort)</span>
+        </div>
+      </div>
+    </div>
     <script src="/src/quickSort.js"></script>
     <script src="/src/bubbleSort.js"></script>
     <script src="/src/index.js"></script>
