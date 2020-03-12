@@ -1,5 +1,4 @@
 function createElement(height, id) {
-  console.log(height);
   let div = document.createElement('div');
   div.id = id;
   div.classList.add('element');
